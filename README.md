@@ -27,4 +27,5 @@ Signed URLs provide time-limited access to your content. To generate signed URLs
 ### 3. Generate public and private key
 
 openssl genrsa -out private_key.pem 2048
+
 openssl rsa -pubout -in private_key.pem -out public_key.pem
