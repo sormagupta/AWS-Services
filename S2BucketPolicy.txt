@@ -1,0 +1,13 @@
+{
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "cloudfront.amazonaws.com"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::s3bucket/*",
+            "Condition": {
+                "StringEquals": {
+                    "AWS:SourceArn": "arn:aws:cloudfront::2344578:distribution/ERYF1W8VN0E2HTKN"
+                }
+            }
+}
