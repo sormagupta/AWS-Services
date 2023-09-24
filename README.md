@@ -23,3 +23,8 @@ If your content is intended to be publicly accessible, configure your CloudFront
 ### 3. Signed URLs
 
 Signed URLs provide time-limited access to your content. To generate signed URLs, you can use AWS SDKs, CLI, or code snippets in various programming languages. Here's an example using Python:
+
+### 3. Generate public and private key
+
+openssl genrsa -out private_key.pem 2048
+openssl rsa -pubout -in private_key.pem -out public_key.pem
